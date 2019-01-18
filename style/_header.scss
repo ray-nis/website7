@@ -1,13 +1,15 @@
 .header {
     width: 100%;
-    padding: 20px 0;
+    height: 10vh;
     position: fixed;
     top: 0;
+    background-color: #fff;
 }
 
 .header-title {
     display: flex;
     justify-content: space-around;
+    margin-top: 3vh;
 
     h1 {
         font-family: $main-font;
@@ -31,6 +33,7 @@
     flex-direction: column;
     text-align: center;
     display: none;
+    background-color: #fff;
 
     a {
         text-decoration: none;
@@ -40,6 +43,7 @@
     h1 {
         margin-bottom: 20px;
         font-size: 1.2em;
+        font-family: $main-font;
     }
 }
 
@@ -50,6 +54,8 @@
    
     .header-title {
         width: 40%;
+        align-items: center;
+        margin-top: 0;
 
         i {
             display: none;
@@ -62,7 +68,7 @@
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-        align-items: flex-end;
+        align-items: center;
 
         hr {
             display: none;
@@ -70,7 +76,7 @@
 
         h1 {
             font-size: 1em;
-            margin-bottom: 10px;
+            margin-bottom: 0px;
         
             &:hover {
                 color: #2781e6;
