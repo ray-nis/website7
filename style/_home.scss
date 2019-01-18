@@ -2,4 +2,47 @@
     width: 100%;
     background-color: #2781e6;
     margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        width: 350px;
+        height: 350px;
+    }
+}
+
+.home-text {
+    width: 80%;
+    h1 {
+        font-family: $main-font;
+        font-size: 2em;
+        color: #fff;
+        line-height: 1.5;
+        margin: 30px 0;
+    }
+
+    p {
+        font-family: $main-font;
+        font-size: 1.2em;
+        color: #fff;
+        text-align: left;
+        line-height: 1.1;
+        margin-bottom: 40px;
+    }
+
+    a {
+        font-family: $main-font;
+        font-size: 1.2em;
+        color: #fff;
+        padding: 10px;
+        border: 1px solid #fff;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .home {
+        height: 90vh;
+    }
 }
