@@ -120,8 +120,9 @@
 }
 
 .home img {
-  width: 350px;
-  height: 350px;
+  margin-top: 50px;
+  width: 200px;
+  height: 200px;
 }
 
 .home-text {
@@ -149,13 +150,26 @@
   font-family: "Open Sans", sans-serif;
   font-size: 1.2em;
   color: #fff;
-  padding: 10px;
+  padding: 10px 30px;
   border: 1px solid #fff;
+  -webkit-transition: .25s;
+  transition: .25s;
+  cursor: pointer;
+}
+
+.home-text a:hover {
+  background-color: #fff;
+  color: #2781e6;
+  text-decoration: underline;
 }
 
 @media screen and (min-width: 1000px) {
   .home {
     height: 90vh;
+  }
+  .home img {
+    width: auto;
+    height: 50vh;
   }
 }
 
