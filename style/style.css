@@ -4,6 +4,7 @@
   position: fixed;
   top: 0;
   background-color: #fff;
+  z-index: 500;
 }
 
 .header-title {
@@ -43,6 +44,7 @@
   text-align: center;
   display: none;
   background-color: #fff;
+  padding-bottom: 10px;
 }
 
 .nav a {
@@ -87,6 +89,7 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    padding-bottom: 0px;
   }
   .nav hr {
     display: none;
@@ -135,6 +138,10 @@
   color: #fff;
   line-height: 1.5;
   margin: 30px 0;
+}
+
+.home-text h1 span {
+  color: #efad43;
 }
 
 .home-text p {
