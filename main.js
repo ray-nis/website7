@@ -11,3 +11,23 @@ if (screen.width < 1000) {
     $("#m5").click(menuSlide);
     $("#m6").click(menuSlide);
 }
+
+
+function isScrolledIntoView(el) {
+    var rect = el.getBoundingClientRect();
+    var elemTop = rect.top;
+    var elemBottom = rect.bottom;
+    var isVisible = elemTop < window.innerHeight && elemBottom >= 0;;
+    return isVisible;
+}
+
+let aboutImg = document.querySelector("#about-img");
+let aboutText = document.querySelector(".about-text");
+window.onscroll = () => {
+    if (isScrolledIntoView(aboutImg)) {
+        aboutImg.classList.add("scale-up-center");
+    }
+    if (isScrolledIntoView(aboutText)) {
+        aboutText.classList.add("slide-in-top");
+    }
+}
