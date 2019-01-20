@@ -50,3 +50,24 @@ window.onscroll = () => {
         services[5].classList.add("puff-in-top");
     }
 }
+
+
+$(document).ready(function () {
+    $(window).scroll(function() {
+        var Scroll = $(window).scrollTop() + 1;
+        var homeSection = $('#home').offset().top + 1;
+        var aboutSection = $('#about').offset().top;
+        var serviceSection = $('#services').offset().top;
+
+
+        if (Scroll >= homeSection && Scroll < aboutSection) {
+            $("#m1").addClass("current-menu-item");
+            $("#m2").removeClass("current-menu-item");
+            $("#m3").removeClass("current-menu-item");
+        } else if (Scroll >= aboutSection && Scroll < serviceSection) {
+            $("#m2").addClass("current-menu-item");
+            $("#m1").removeClass("current-menu-item");
+            $("#m3").removeClass("current-menu-item");
+        }
+    })
+});
