@@ -6,8 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Website</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <link href="style/lightbox.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style/style.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="lightbox.min.js"></script>
 </head>
 <body>
     <header class="header">
@@ -20,7 +23,7 @@
             <a id="m1" href="#home"><h1>HOME</h1></a>
             <a id="m2" href="#about"><h1>ABOUT US</h1></a>
             <a id="m3" href="#services"><h1>SERVICES</h1></a>
-            <a id="m4" href="#"><h1>PORTFOLIO</h1></a>
+            <a id="m4" href="#portfolio"><h1>PORTFOLIO</h1></a>
             <a id="m5" href="#"><h1>TEAM</h1></a>
             <a id="m6" href="#"><h1>CONTACT</h1></a>
             <hr>
@@ -93,7 +96,17 @@
         </div>
     </section>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <section id="portfolio" class="portfolio">
+        <h1 class="section-title">PORTFOLIO</h1>
+        <div class="portfolio-container">
+            <a href="img/1.jpg" data-lightbox="images"><img class="port-img" src="img/1.jpg"></a>
+            <a href="img/2.jpg" data-lightbox="images"><img class="port-img" src="img/2.jpg"></a>
+            <a href="img/3.jpg" data-lightbox="images"><img class="port-img" src="img/3.jpg"></a>
+            <a href="img/4.jpg" data-lightbox="images"><img class="port-img" src="img/4.jpg"></a>
+            <a href="img/5.jpg" data-lightbox="images"><img class="port-img" src="img/5.jpg"></a>
+            <a href="img/6.jpg" data-lightbox="images"><img class="port-img" src="img/6.jpg"></a>
+        </div>
+    </section>
     <script src="main.js"></script>
 </body>
 </html>

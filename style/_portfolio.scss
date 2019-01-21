@@ -1,0 +1,32 @@
+.portfolio-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.port-img {
+    width: 80%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 4px;
+}
+
+@media screen and (min-width: 1000px) {
+    .portfolio-container {
+        width: 95%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin: 0 auto;
+        flex-wrap: wrap;
+
+        a {
+            width: 30%;
+        }
+    }
+
+    .port-img {
+        width: 100%;
+    }
+}
