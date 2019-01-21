@@ -58,15 +58,28 @@ $(document).ready(function () {
         var homeSection = $('#home').offset().top + 1;
         var aboutSection = $('#about').offset().top;
         var serviceSection = $('#services').offset().top;
+        var portfolioSection = $('#portfolio').offset().top;
 
 
         if (Scroll >= homeSection && Scroll < aboutSection) {
             $("#m1").addClass("current-menu-item");
             $("#m2").removeClass("current-menu-item");
             $("#m3").removeClass("current-menu-item");
+            $("#m4").removeClass("current-menu-item");
         } else if (Scroll >= aboutSection && Scroll < serviceSection) {
             $("#m2").addClass("current-menu-item");
             $("#m1").removeClass("current-menu-item");
+            $("#m3").removeClass("current-menu-item");
+            $("#m4").removeClass("current-menu-item");
+        } else if (Scroll >= serviceSection && Scroll < portfolioSection) {
+            $("#m3").addClass("current-menu-item");
+            $("#m1").removeClass("current-menu-item");
+            $("#m2").removeClass("current-menu-item");
+            $("#m4").removeClass("current-menu-item");
+        } else if (Scroll >= portfolioSection) {
+            $("#m4").addClass("current-menu-item");
+            $("#m1").removeClass("current-menu-item");
+            $("#m2").removeClass("current-menu-item");
             $("#m3").removeClass("current-menu-item");
         }
     })
