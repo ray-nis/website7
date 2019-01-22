@@ -853,6 +853,10 @@ figure div a i {
   cursor: pointer;
 }
 
+.copyrights {
+  text-align: center;
+}
+
 @media screen and (min-width: 1000px) {
   .contact-container {
     display: -webkit-box;
