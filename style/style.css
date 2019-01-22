@@ -627,6 +627,103 @@
   }
 }
 
+.team-person {
+  width: 70%;
+  margin-bottom: 30px;
+}
+
+.team-person h1 {
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+}
+
+.team-person p {
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  color: #808182;
+}
+
+figure {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+}
+
+figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+
+figure div {
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  width: 100%;
+  display: none;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  cursor: pointer;
+}
+
+figure div a {
+  text-decoration: none;
+  color: #fff;
+}
+
+figure div a i {
+  font-size: 20px;
+}
+
+.team-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.fa-facebook-f:hover {
+  color: #3371d6;
+}
+
+.fa-twitter:hover {
+  color: #63c3e2;
+}
+
+.fa-pinterest:hover {
+  color: #e83a2e;
+}
+
+.fa-github:hover {
+  color: #808182;
+}
+
+@media screen and (min-width: 1000px) {
+  .team-person {
+    width: 20%;
+  }
+  .team-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
 html {
   scroll-behavior: smooth;
 }

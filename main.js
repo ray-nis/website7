@@ -31,22 +31,22 @@ window.onscroll = () => {
     if (isScrolledIntoView(aboutText)) {
         aboutText.classList.add("slide-in-top");
     }
-    if (isScrolledIntoView(services[0])) {
+    if (isScrolledIntoView(services[0]) && screen.width > 1000) {
         services[0].classList.add("puff-in-top");
     }
-    if (isScrolledIntoView(services[1])) {
+    if (isScrolledIntoView(services[1]) && screen.width > 1000) {
         services[1].classList.add("puff-in-top");
     }
-    if (isScrolledIntoView(services[2])) {
+    if (isScrolledIntoView(services[2]) && screen.width > 1000) {
         services[2].classList.add("puff-in-top");
     }
-    if (isScrolledIntoView(services[3])) {
+    if (isScrolledIntoView(services[3]) && screen.width > 1000) {
         services[3].classList.add("puff-in-top");
     }
-    if (isScrolledIntoView(services[4])) {
+    if (isScrolledIntoView(services[4]) && screen.width > 1000) {
         services[4].classList.add("puff-in-top");
     }
-    if (isScrolledIntoView(services[5])) {
+    if (isScrolledIntoView(services[5]) && screen.width > 1000) {
         services[5].classList.add("puff-in-top");
     }
 }
@@ -84,3 +84,24 @@ $(document).ready(function () {
         }
     })
 });
+
+document.querySelector(".team-img-1").addEventListener("mouseover", () => {
+    document.querySelector("#team-1-contact").style.display = "flex";
+})
+document.querySelector(".team-img-1").addEventListener("mouseout", () => {
+    document.querySelector("#team-1-contact").style.display = "none";
+})
+
+document.querySelector(".team-img-2").addEventListener("mouseover", () => {
+    document.querySelector("#team-2-contact").style.display = "flex";
+})
+document.querySelector(".team-img-2").addEventListener("mouseout", () => {
+    document.querySelector("#team-2-contact").style.display = "none";
+})
+
+document.querySelector(".team-img-3").addEventListener("mouseover", () => {
+    document.querySelector("#team-3-contact").style.display = "flex";
+})
+document.querySelector(".team-img-3").addEventListener("mouseout", () => {
+    document.querySelector("#team-3-contact").style.display = "none";
+})

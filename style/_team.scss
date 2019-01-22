@@ -1,0 +1,82 @@
+.team-person {
+    width: 70%;
+    margin-bottom: 30px;
+
+    h1 {
+        text-align: center;
+        font-family: $main-font;
+    }
+
+    p {
+        text-align: center;
+        font-family: $main-font;
+        color: #808182;
+    }
+}
+
+figure {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+}
+
+figure img {
+    display: block;
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+
+figure div {
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    width: 100%;
+    display: none;
+    justify-content: space-evenly;
+    cursor: pointer;
+
+    a {
+        text-decoration: none;
+        color: #fff;
+
+        i {
+            font-size: 20px;
+        }
+    }
+}
+
+.team-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fa-facebook-f:hover {
+    color: #3371d6;
+}
+
+.fa-twitter:hover {
+    color: #63c3e2;
+}
+
+.fa-pinterest:hover {
+    color: #e83a2e;
+}
+
+.fa-github:hover {
+    color: #808182;
+}
+
+@media screen and (min-width: 1000px) {
+    .team-person {
+        width: 20%;
+    }
+
+    .team-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
