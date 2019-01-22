@@ -24,6 +24,7 @@ function isScrolledIntoView(el) {
 let aboutImg = document.querySelector("#about-img");
 let aboutText = document.querySelector(".about-text");
 let services = document.querySelectorAll(".service");
+let client = document.querySelector("#client1");
 window.onscroll = () => {
     if (isScrolledIntoView(aboutImg)) {
         aboutImg.classList.add("scale-up-center");
@@ -49,6 +50,12 @@ window.onscroll = () => {
     if (isScrolledIntoView(services[5]) && screen.width > 1000) {
         services[5].classList.add("puff-in-top");
     }
+    if (isScrolledIntoView(client)) {
+        document.querySelector("#client1").classList.add("scale-up-center");
+        document.querySelector("#client2").classList.add("scale-up-center");
+        document.querySelector("#client3").classList.add("scale-up-center");
+        document.querySelector("#client4").classList.add("scale-up-center");
+    }
 }
 
 
@@ -59,6 +66,7 @@ $(document).ready(function () {
         var aboutSection = $('#about').offset().top;
         var serviceSection = $('#services').offset().top;
         var portfolioSection = $('#portfolio').offset().top;
+        var teamSection = $('#team').offset().top;
 
 
         if (Scroll >= homeSection && Scroll < aboutSection) {
@@ -76,7 +84,7 @@ $(document).ready(function () {
             $("#m1").removeClass("current-menu-item");
             $("#m2").removeClass("current-menu-item");
             $("#m4").removeClass("current-menu-item");
-        } else if (Scroll >= portfolioSection) {
+        } else if (Scroll >= portfolioSection && Scroll < teamSection) {
             $("#m4").addClass("current-menu-item");
             $("#m1").removeClass("current-menu-item");
             $("#m2").removeClass("current-menu-item");
